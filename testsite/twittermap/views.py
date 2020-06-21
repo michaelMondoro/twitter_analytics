@@ -13,10 +13,10 @@ import matplotlib.pyplot as plt
 import pandas
 
 #Connect with Twitter
-CONSUMER_KEY = "l73kjRjMDlzNvZ67Kbw41RO63"
-CONSUMER_SECRET = "VrrwIrIbzaITfQZEqZ4cOTiUW9sTJ4JsjJEg4jXmhTj7e9bdnA"
-ACCESS_TOKEN = "983195774694682625-hJEVsEN3AkxjghEHdZup7S37fTanuBZ"
-ACCESS_TOKEN_SECRET = "jljtQ60dF1BTQIYEzMCgH0EsqjV41Fn3pdD8M0M6jLe2O"
+CONSUMER_KEY = "YOUR KEY"
+CONSUMER_SECRET = "YOUR SECRET"
+ACCESS_TOKEN = "YOUR TOKEN"
+ACCESS_TOKEN_SECRET = "YOUR SECRET"
 api = twitter.Api(consumer_key=CONSUMER_KEY,
                   consumer_secret=CONSUMER_SECRET,
                   access_token_key=ACCESS_TOKEN,
