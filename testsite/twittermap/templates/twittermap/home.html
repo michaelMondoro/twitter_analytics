@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Twitter</title>
+<h1>Twitter Analysis</h1>
+</head>
+<body>
+	<form action="" method="POST"> {% csrf_token %}
+	    <label >Enter Twitter Screen Names - User1: </label>
+	    <input type="text" name="user1" value="">
+	    <label >User2: </label>
+	    <input type="text" name="user2" value="">
+	    <input type="submit" value="OK">
+	</form>
+
+
+	<hr width=35% align=left>
+
+	<div style="width:50%; float:left;">
+	
+		<a href={{img1}}></a>
+		<p>	Stats for: {{user1.name}}<br>
+			<b><i>Most Recent Tweet: </i> </b>{{user1.latest.created_at}}<br>
+			{{user1.latest.full_text}} <br><br>
+			<b><i>Common Hashtags: </i> </b>{{user1.hashtags}} <br><br>
+			<b><i>Tweet Volume (Average Tweets per Month):</i></b> {{user1.volume}}<br>
+			
+		</p>
+		<br>
+	</div>
+
+	<div style="width:50%; float:right;">
+	
+		<p>	Stats for: {{user2.name}}<br>
+			<b><i>Most Recent Tweet: </i> </b>{{user2.latest.created_at}}<br>
+			{{user2.latest.full_text}} <br><br>
+			<b><i>Common Hashtags: </i> </b>{{user2.hashtags}} <br><br>
+			<b><i>Tweet Volume (Average Tweets per Month):</i></b> {{user2.volume}}<br>
+			
+		</p>
+		<br>
+	</div>
+	<p>Common Friends: {{common_friends}}</p>
+</body>
+</html>
