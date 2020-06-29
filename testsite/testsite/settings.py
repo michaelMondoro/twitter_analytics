@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['192.168.30.11', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'blog.apps.BlogConfig',
     'twittermap.apps.TwittermapConfig',
     'django.contrib.admin',
     'django.contrib.auth',
